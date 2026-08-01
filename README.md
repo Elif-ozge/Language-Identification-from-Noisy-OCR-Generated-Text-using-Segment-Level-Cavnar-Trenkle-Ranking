@@ -100,14 +100,14 @@ Evaluating on the **ICDAR MLT-19 Benchmark Test Dataset**:
 | **Hindi** | **95.00%** | Devanagari script features, minor noise from shared symbols. |
 | **Chinese** | **92.50%** | High Hanzi coverage across document blocks. |
 | **Korean** | **91.80%** | Distinct Hangul syllabic block identification. |
-| **Japanese** | **18.18%** | *Challenge Case*: High overlap between Japanese Kanji and Chinese Hanzi. |
+| **Japanese** | **18.18%** | *Challenge Case*: High overlap between Japanese scripts (including Romaji) and Latin characters. |
 
 ###  Segment Confusion Matrix
 
 ![Confusion Matrix](conf_segment_cavnar.png)
 
-> **Insights on Japanese Script Recognition:**
-> In multilingual OCR datasets, Japanese text frequently contains Kanji characters, which share identical Unicode character codepoints with Chinese Hanzi. Without full contextual sentence modeling, character-level windowing classifies standalone Kanji as Chinese. Resolving this ambiguity is addressed by combining sub-word token context windowing.
+> In multilingual OCR datasets, Japanese text often includes Latin alphabet characters (Romaji) and kanji. The overlap in character distribution leads to misclassification of Japanese segments as Latin. This ambiguity is mitigated by incorporating sub-word token context windowing and script-aware segmentation.
+
 
 ---
 
