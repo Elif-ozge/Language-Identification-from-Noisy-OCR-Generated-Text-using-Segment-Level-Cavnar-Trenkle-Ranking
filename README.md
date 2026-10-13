@@ -84,8 +84,8 @@ Evaluating on the **ICDAR MLT-19 Benchmark Test Dataset**:
 | Metric | Score |
 | :--- | :---: |
 | **Segment-Level Accuracy** | **97.29%** |
-| **Image-Level Mean Accuracy** | **97.08%** ($\pm 7.12\%$) |
-| **Image-Level Mean F1-Score** | **94.47%** ($\pm 12.78\%$) |
+| **Image-Level Mean Accuracy** | **97.08%** (&plusmn; 7.12%) |
+| **Image-Level Mean F1-Score** | **94.47%** (&plusmn; 12.78%) |
 | **Mixed-Language Image Accuracy** | **96.41%** |
 
 ###  Per-Language Accuracy Breakdown
