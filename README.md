@@ -90,8 +90,6 @@ Evaluating on the **ICDAR MLT-19 Benchmark Test Dataset**:
 
 ###  Per-Language Accuracy Breakdown
 
-![Language Accuracy](lang_Acc.png)
-
 | Language / Script | Accuracy | Primary Factors & Observations |
 | :--- | :---: | :--- |
 | **Arabic** | **100.00%** | Highly distinct cursive connected script, zero overlap. |
@@ -104,23 +102,10 @@ Evaluating on the **ICDAR MLT-19 Benchmark Test Dataset**:
 
 ###  Segment Confusion Matrix
 
-![Confusion Matrix](conf_segment_cavnar.png)
+![Confusion Matrix](./assets/conf_segment_cavnar.png)
 
 > In multilingual OCR datasets, Japanese text often includes Latin alphabet characters (Romaji) and kanji. The overlap in character distribution leads to misclassification of Japanese segments as Latin. This ambiguity is mitigated by incorporating sub-word token context windowing and script-aware segmentation.
 
-
----
-
-##  Repository Structure
-
-```
-├── ocr_lang_detection.ipynb     # Main Jupyter Notebook (Data Processing, Model Training & Eval)
-├── lang_Acc.png                 # Per-language accuracy visualization chart
-├── conf_segment_cavnar.png      # Segment-level confusion matrix heatmap
-├── final_sunum_443_ocr.pptx     # Project presentation slides
-├── 221401014_final_sunum_443_ocr.mp4 # Video demonstration & project walkthrough
-└── README.md                    # Project documentation
-```
 
 ---
 
